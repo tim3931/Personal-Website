@@ -1,0 +1,12 @@
+#intro {
+    min-height: 200px;
+    max-height: 400px;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+#avatar {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
