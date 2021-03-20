@@ -13,11 +13,12 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house icon" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                     <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
                 </svg>
+                <span style="font-size: 0.9rem;">Personal Site</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,33 +26,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown link
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Projects
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">multiplication game</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/tim3931/Multiplication-practice-Game" target="_blank">multiplication game</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Donate</a></li>
+                            <li><a class="dropdown-item" href="./donate.html">Donate</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -60,16 +49,132 @@
     </nav>
     <div id="intro">
         <div class="container">
-            <img class="img-thumbnail col-md-3" id="avatar" src="./src/avatar.jfif" />
-            <div class="col-md-9">
-                <div class="text-end">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="img-thumbnail " id="avatar" src="./src/avatar.jfif" />
 
                 </div>
+                <div class="col-md-7 p-5">
+                    <div class="text-start fs-1">
+                        Tim, Lai Ho Tin
+                    </div>
+                    <div class="text-start text-muted" id="caption">
+                        Undergraduate from The Hong Kong Polytechnic University.
+                    </div>
+                    <div class="text-start fs-6 text-muted">
+                        Fullstack Web <span id="fullstack">Developer</span> and Native Application <span id="react-native">Developer</span>
+                    </div>
+                    <div class="text-start text-muted">
+                        Github ID: tim3931
+                    </div>
+
+                </div>
+
             </div>
         </div>
-
     </div>
+    <div id="aboutSection">
+        <div class="fs-3 p-2 text-center">
+            <a class="collapseButton" data-bs-toggle="collapse" href="#aboutMe" role="button" aria-expanded="false" aria-controls="aboutMe">
+                About Me
+            </a>
 
+        </div>
+        <div class="collapse" id="aboutMe" style="background-color: #ddd; color: #000; padding-bottom: 100px;">
+            <div class="container p-4">
+                <div>Undergraduate from <span style="color: #ad2727;">Board Discipline of Computing</span> in The Hong Kong Polytechnic University.</div>
+                <div><span class="highlight">Driven</span> and <span class="highlight">self-motivated</span>, therefore effective at completing task with minimal supervision.</div>
+                <div><span class="highlight">Aggressive</span> and <span class="highlight">Fast Learner</span> and willing to communicate with team members.</div>
+                <div><span class="highlight">Prudent</span> and <span class="highlight">earnest</span> in achieving goals.</div>
+            </div>
+        </div>
+    </div>
+    <div id="skillsSection">
+        <div class="fs-3 p-2 text-center">
+            <a class="collapseButton" data-bs-toggle="collapse" href="#skills" role="button" aria-expanded="false" aria-controls="skills">
+                Skills
+            </a>
+        </div>
+        <div class="collapse" id="skills" style="background-color: #ddd; color: #000; padding-bottom: 100px;">
+            <div class="container p-4 d-flex flex-wrap">
+                <a class="m-2 badge rounded-pill bg-success px-4 py-2 unwant-neon">NodeJS</a>
+                <a class="m-2 badge rounded-pill bg-success px-4 py-2 unwant-neon">C</a>
+                <a class="m-2 badge rounded-pill bg-success px-4 py-2 unwant-neon">C++</a>
+                <a class="m-2 badge rounded-pill bg-success px-4 py-2 unwant-neon">C#</a>
+                <a class="m-2 badge rounded-pill bg-dark px-4 py-2 unwant-neon">Python</a>
+                <a class="m-2 badge rounded-pill bg-warning px-4 py-2 unwant-neon">JavaScript</a>
+                <a class="m-2 badge rounded-pill bg-info px-4 py-2 unwant-neon">ReactJS</a>
+                <a class="m-2 badge rounded-pill bg-info px-4 py-2 unwant-neon">React Native</a>
+                <a class="m-2 badge rounded-pill bg-light px-4 py-2 unwant-neon " style="color: #000;">Java</a>
+                <a class="m-2 badge rounded-pill bg-danger px-4 py-2 unwant-neon">Artifical Intelligence</a>
+                <a class="m-2 badge rounded-pill bg-light px-4 py-2 unwant-neon " style="color: #000;">Data Mining and Data Warehousing</a>
+                <a class="m-2 badge rounded-pill bg-warning px-4 py-2 unwant-neon">Computer System Security</a>
+                <a class="m-2 badge rounded-pill bg-warning px-4 py-2 unwant-neon">Biometric Security</a>
+                <a class="m-2 badge rounded-pill bg-primary px-4 py-2 unwant-neon">Database System</a>
+                <a class="m-2 badge rounded-pill bg-primary px-4 py-2 unwant-neon">Object Oriented Programming</a>
+                <a class="m-2 badge rounded-pill bg-primary px-4 py-2 unwant-neon">Computer networking</a>
+                <a class="m-2 badge rounded-pill bg-primary px-4 py-2 unwant-neon">Cloud Computing</a>
+                <a class="m-2 badge rounded-pill bg-primary px-4 py-2 unwant-neon">Mobile Apps Development</a>
+                <a class="m-2 badge rounded-pill bg-primary px-4 py-2 unwant-neon">Computer Graphic</a>
+                <a class="m-2 badge rounded-pill bg-primary px-4 py-2 unwant-neon">Game Design and Development</a>
+                <a class="m-2 badge rounded-pill bg-primary px-4 py-2 unwant-neon">Introduction to Human-computer Interaction Methods </a>
+            </div>
+        </div>
+    </div>
+    <div id="experienceSection">
+        <div class="fs-3 p-2 text-center">
+            <a class="collapseButton" data-bs-toggle="collapse" href="#experience" role="button" aria-expanded="false" aria-controls="experience">
+                Experience
+            </a>
+        </div>
+        <div class="collapse" id="experience" style="background-color: #ddd; color: #000; padding-bottom: 100px;">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">From</th>
+                        <th scope="col">To</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Employer</th>
+                        <th scope="col">Product</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2020/09</td>
+                        <td>2021/03</td>
+                        <td>Fullstack Web and Native Application Developer </td>
+                        <td>Home Concept Limited Company</td>
+                        <td><a class="unwant-neon" href="https://care28.com/" target="_blank"> Care28 </a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2020/07</td>
+                        <td>2020/08</td>
+                        <td>Fullstack Web Developer </td>
+                        <td>Home Concept Limited Company</td>
+                        <td><a class="unwant-neon" href="https://homebloggerhk.com/" target="_blank"> HomeBloggerHK </a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>2019/07</td>
+                        <td>2019/08</td>
+                        <td>Summer Internship: Junior Web Designer </td>
+                        <td>Department of Health</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div id="footerSection">
+        <div class="text-center">
+            Copyright &copy; 2021 Horkos1329. All Rights Reserved
+        </div>
+    </div>
 
 
 

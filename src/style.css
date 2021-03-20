@@ -1,8 +1,53 @@
+body {
+    font-family: Georgia, serif;
+}
+
+a:hover {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #3BCCB6, 0 0 30px #3BCCB6, 0 0 40px #3BCCB6, 0 0 55px #3BCCB6, 0 0 75px #3BCCB6, 2px 2px 1px rgba(59, 204, 182, 0);
+}
+
+hr {
+    background-color: #212529;
+}
+
+table {
+    background-color: #FFF;
+}
+
+.dropdown-item:hover {
+    text-shadow: none;
+    opacity: 0.8;
+}
+
+.highlight {
+    color: #e58919;
+}
+
+.collapseButton {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.collapseButton::after {
+    content: url("./caret-down-fill.svg");
+}
+
+.collapseButton:hover {
+    text-shadow: none;
+    color: #3BCCB6;
+}
+
+.unwant-neon:hover {
+    text-shadow: none;
+    text-decoration: none;
+    color: #FFF;
+}
+
 #intro {
     min-height: 200px;
-    max-height: 400px;
     padding: 20px;
     background-color: #ddd;
+    padding-bottom: 100px;
 }
 
 #avatar {
@@ -10,3 +55,43 @@
     height: 300px;
     object-fit: cover;
 }
+
+#react-native {
+    color: #0aa2c0 !important;
+}
+
+#fullstack {
+    color: #e58919 !important;
+}
+
+#caption {
+    font-size: 0.5rem;
+    padding: 10px 0;
+}
+
+#footerSection {
+    width: 100%;
+    padding: 40px;
+}
+
+#aboutSection,
+#experienceSection,
+#skillsSection,
+#footerSection {
+    background-color: #212529;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+}
+
+@media only screen and (max-width: 765px) {
+    #avatar {
+        width: 100%;
+        object-position: 50% 30%;
+        object-fit: cover;
+    }
+    .nav-link {
+        text-align: center !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {}
